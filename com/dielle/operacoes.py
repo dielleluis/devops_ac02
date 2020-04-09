@@ -1,14 +1,5 @@
-class Operacoes():
+class Operacoes:
 
-    def soma(self, valores):
-        val = 0
-        for v in valores:
-            val += v
-        return val
-
-
-    def substracao(self, valores):
-        val = 0
-        for v in valores:
-            val -= v
-        return val
+    def pow(self, x, y):
+        p = x**y
+        return p

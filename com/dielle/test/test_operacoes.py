@@ -1,12 +1,15 @@
-from unittest import TestCase
+import unittest
 from com.dielle.operacoes import Operacoes
 
-class TestOperacoes(TestCase):
+
+class TestOperacoes(unittest.TestCase):
 
     def setUp(self):
         self.operacoes = Operacoes()
 
+    def test_pow(self):
+        self.assertEqual(self.operacoes.pow(2, 3), 8, 'Should be 8')
 
-    def test_soma(self):
-        self.assertEqual(self.operacoes.soma([1, 5]), 6, 'Should be 6')
-        
+
+    if __name__ == '__main__':
+        unittest.main()
